@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+
+<div class="container">
+    
+    
+    <div class="nav-bar">
+     <ul>
+            <li><a href=""> Home </a> </li>
+            <li><a href=""> Programming <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                    <li><a href=""> Python </a></li>
+                    <li><a  href=""> HTML </a></li>
+                    <li><a  href=""> CSS </a></li>
+                    <li><a  href=""> C/C++ </a></li>
+                </ul>
+            </li>
+            <li><a href=""> Networking <span class="arrow-down"></span> </a>
+                <ul class="dropdown">
+                    <li><a href=""> Basic Networking </a></li>
+                    <li><a href=""> CCNA </a></li>
+                </ul>
+            </li>
+            <li><a href=""> Blog </a> </li>
+            <li><a href=""> About Me </a> </li>
+    </ul>
+   </div>
+    <div class="nav-mobile">
+      <div class="menu-icon"> <span></span> <span></span> <span></span> </div>
+    
+    
+    </div>
+</div>
+</body>
+</html>
+<script src="https://ajax.googlepis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+        $('.menu-icon').click(function(){
+        $('.nav-bar').toggleClass('visible');
+        });
+    });
+</script>
+
+
+
